@@ -1,6 +1,6 @@
 {
     "name": "profcomff-ui-common",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "main": "index.js",
     "scripts": {
         "lint": "eslint --ext .vue,.js .",
