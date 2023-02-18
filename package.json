@@ -12,6 +12,8 @@
     "author": "",
     "license": "ISC",
     "peerDependencies": {
+        "click-outside-vue3": "^4.0.1",
+        "single-spa": "^5.9.4",
         "vue": "^3.2.47"
     },
     "devDependencies": {

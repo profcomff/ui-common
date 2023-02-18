@@ -1,33 +1,45 @@
 <template>
-    <span
-        class="material-symbols-sharp noselect"
-        :style="style"
+    <button
+        class="noselect desktop-menu-item"
+        :class="{ active }"
     >
-        {{ icon }}
-    </span>
+        {{ title }}
+    </button>
 </template>
-
 <script>
 export default {
     props: {
-        icon: {
+        title: {
             type: String,
             required: true,
         },
-        size: Number,
-        color: String,
-    },
-    computed: {
-        style() {
-            const style = {};
-            if (this.size) style.fontSize = `${this.size}px`;
-            if (this.color) style.color = this.color;
-            return style;
+        path: {
+            type: String,
+            requred: true,
+        },
+        active: {
+            type: Boolean,
+            default: false,
         },
     },
 };
 </script>
-<style scoped>
+<style>
+.desktop-menu-item {
+    color: var(--bs-on-primary);
+    padding: 0 4px;
+    width: 120px;
+}
+
+.desktop-menu-item:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.active {
+    color: var(--bs-secondary);
+    background: rgba(255, 255, 255, 0.2);
+}
+
 .noselect {
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
