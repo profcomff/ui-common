@@ -1,6 +1,5 @@
 {
-    "name": "@profcomff/ui-common",
-    "private": "false",
+    "name": "profcomff-ui-common",
     "version": "0.0.1",
     "main": "index.js",
     "scripts": {
