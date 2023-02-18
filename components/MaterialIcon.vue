@@ -1,7 +1,7 @@
 <template>
     <span
         class="material-symbols-sharp"
-        :style="{ fontSize: `${size}px`, color }"
+        :style="style"
     >
         {{ icon }}
     </span>
@@ -14,13 +14,15 @@ export default {
             type: String,
             required: true,
         },
-        size: {
-            type: Number,
-            default: 24,
-        },
-        color: {
-            type: String,
-            default: 'black',
+        size: Number,
+        color: String,
+    },
+    computed: {
+        style() {
+            const style = {};
+            if (this.size) style.fontSize = `${this.size}px`;
+            if (this.color) style.color = this.color;
+            return style;
         },
     },
 };
