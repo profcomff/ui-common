@@ -1,0 +1,29 @@
+{
+    "env": {
+        "node": true
+    },
+    "extends": ["plugin:vue/vue3-essential", "eslint:recommended", "@vue/eslint-config-prettier"],
+    "parserOptions": {
+        "parser": "@babel/eslint-parser",
+        "requireConfigFile": false
+    },
+    "rules": {
+        "eqeqeq": "error",
+        "no-extra-boolean-cast": [
+            "error",
+            {
+                "enforceForLogicalOperands": true
+            }
+        ],
+        "vue/component-name-in-template-casing": [
+            "error",
+            "PascalCase",
+            {
+                "registeredComponentsOnly": false
+            }
+        ],
+        "object-shorthand": "warn",
+        "vue/html-self-closing": "warn",
+        "no-debugger": "error"
+    }
+}

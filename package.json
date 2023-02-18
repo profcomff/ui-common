@@ -1,14 +1,25 @@
 {
     "name": "profcomff-ui-common",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "lint": "eslint --ext .vue,.js .",
+        "lint:fix": "eslint --ext .vue,.js --fix .",
+        "format": "prettier --check .",
+        "format:write": "prettier --write ."
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
     "peerDependencies": {
         "vue": "^3.2.47"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.20.12",
+        "@babel/eslint-parser": "^7.19.1",
+        "@vue/eslint-config-prettier": "^7.0.0",
+        "eslint": "^8.34.0",
+        "eslint-plugin-vue": "^9.9.0",
+        "prettier": "^2.8.4"
     }
 }
