@@ -1,7 +1,10 @@
 {
-    "name": "profcomff-ui-common",
-    "version": "0.0.5",
+    "name": "@profcomff/ui-common",
+    "version": "0.0.6",
     "main": "index.js",
+    "publishConfig": {
+        "access": "public"
+    },
     "scripts": {
         "lint": "eslint --ext .vue,.js .",
         "lint:fix": "eslint --ext .vue,.js --fix .",
